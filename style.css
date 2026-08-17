@@ -37,7 +37,7 @@ header {
 }
 
 .logo img {
-  height: 60px;
+  height: 40px;   /* micro logo ajustada */
   width: auto;
 }
 
@@ -61,16 +61,16 @@ nav a:hover {
 
 /* Hero / Banner */
 .hero {
-  background: url('img/cabeca.jpeg.jpeg') no-repeat center top;
+  background: url('img/banner.jpeg') no-repeat center top;
   background-size: cover;
-  height: 90vh; /* ligeiramente maior para descer o banner */
+  height: 90vh; /* altura ajustada */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
   color: var(--branco);
-  margin-top: 10px; /* desce o banner levemente */
+  margin-top: 10px; /* desce levemente */
 }
 
 .hero::after {
@@ -84,7 +84,7 @@ nav a:hover {
   position: relative;
   z-index: 1;
   max-width: 800px;
-  padding: 120px 20px 60px; /* ajustado para centralizar melhor */
+  padding: 120px 20px 60px;
 }
 
 .hero h1 {
@@ -202,23 +202,38 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Avaliações */
-.avaliacoes {
-  background: var(--bege-escuro);
+/* Galeria */
+.galeria {
+  background: var(--bege);
   padding: 60px 20px;
   text-align: center;
 }
 
-.avaliacoes h2 {
+.galeria h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
-  color: var(--dourado);
+  color: var(--azul);
 }
 
-.google-reviews {
-  max-width: 900px;
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--bege-escuro);
+  transition: transform 0.3s;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.05);
 }
 
 /* Rodapé */
