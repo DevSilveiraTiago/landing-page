@@ -61,7 +61,7 @@ nav a:hover {
 
 /* Hero / Banner */
 .hero {
-  background: url('img/banner.jpeg') no-repeat center top;
+  background: url('img/cabeca.jpeg.jpeg') no-repeat center top;
   background-size: cover;
   height: 90vh; /* altura ajustada */
   display: flex;
